@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bezier"
         mc:Ignorable="d"
-        Title="Кривая Безье" Height="850" Width="1000">
+        Title="Кривая Безье" Height="1000" Width="1000">
     <Grid Name="grid">
-        <TextBox Name="countInput" TextAlignment="Center" HorizontalAlignment="Left" Margin="860,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" Height="50" FontSize="20" TextChanged="countInput_TextChanged"/>
-        <Canvas x:Name="canvas" Width="800" Height="800" Margin="10,0,190,0" MouseDown="Canvas_MouseDown" Background="Transparent">
-        </Canvas>
-        <Button Content="Random" HorizontalAlignment="Left" Margin="860,137,0,0" VerticalAlignment="Top" Width="60" Height="40" FontSize="15" Click="Button_Click"/>
+        <TextBox Name="countInput" TextAlignment="Center" HorizontalAlignment="Left" Margin="920,30,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" Height="50" FontSize="20" TextChanged="countInput_TextChanged"/>
+        <Canvas x:Name="canvas"  Margin="10,0,90,0" Width="900" Height="940" MouseDown="Canvas_MouseDown" Background="Transparent"/>
+        <Button Content="Random" HorizontalAlignment="Left" Margin="920,105,0,0" VerticalAlignment="Top" Width="60" Height="40" FontSize="15" Click="Button_Click" Background="PaleVioletRed"/>
+        <Button Content="Flower" HorizontalAlignment="Left" Margin="920,165,0,0" VerticalAlignment="Top" Width="60" Height="40" FontSize="15" Background="LightPink" Click="Button_Click_1"/>
+        <Button Content="Heart" HorizontalAlignment="Left" Margin="920,225,0,0" VerticalAlignment="Top" Width="60" Height="40" FontSize="15" Background="HotPink" Click="Button_Click_2"/>
     </Grid>
 </Window>

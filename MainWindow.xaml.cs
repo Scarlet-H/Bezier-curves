@@ -140,4 +140,53 @@ public partial class MainWindow : Window
             DrawBezierCurve();
         }
     }
+
+    private void Button_Click_1(object sender, RoutedEventArgs e)
+    {
+        if (countInput.Text != "")
+        {
+            canvas.Children.Clear();
+            points.Clear();
+            counter = 0;
+            animationStep = 0;
+            int petalsCount = int.Parse(countInput.Text);
+
+            double step = 2 * Math.PI / petalsCount;
+            for (int i = 0; i < petalsCount; i++)
+            {
+                Polyline lines = new() { Stroke = Brushes.Black, StrokeThickness = 0.5 };
+                lines.Points = points;
+                Point point = new Point(canvas.Width / 2 + 100 * Math.Cos(i * step), canvas.Height / 2 + 100 * Math.Sin(i * step));
+                points.Add(point);
+                Ellipse dot = new() { Width = 5, Height = 5, Fill = Brushes.Black };
+                Canvas.SetLeft(dot, point.X - dot.Width / 2);
+                Canvas.SetTop(dot, point.Y - dot.Height / 2);
+                canvas.Children.Add(dot);
+                canvas.Children.Add(lines);
+            }
+            DrawBezierCurve();
+        }
+    }
+
+    private void Button_Click_2(object sender, RoutedEventArgs e)
+    {
+        canvas.Children.Clear();
+        points.Clear();
+        counter = 0;
+        animationStep = 0;
+        Polyline lines = new() { Stroke = Brushes.Black, StrokeThickness = 0.5 };
+        lines.Points = points;
+        points.Add(new Point(canvas.Width/2,3*canvas.Height/4));
+        points.Add(new Point(canvas.Width / 2-3*canvas.Width/8, canvas.Height / 2 + canvas.Height / 12));
+        points.Add(new Point(canvas.Width / 2 - canvas.Width / 8, canvas.Height / 2 - canvas.Height / 4));
+        points.Add(new Point(canvas.Width / 2 + canvas.Width / 16, canvas.Height / 2-canvas.Height/6));
+        points.Add(new Point(canvas.Width / 2, 3 * canvas.Height / 4));
+        points.Add(new Point(canvas.Width / 2, 3 * canvas.Height /4));
+        points.Add(new Point(canvas.Width / 2 - canvas.Width / 16, canvas.Height / 2 - canvas.Height / 6));
+        points.Add(new Point(canvas.Width / 2 + canvas.Width / 8, canvas.Height / 2 - canvas.Height / 4));
+        points.Add(new Point(canvas.Width / 2 + 3*canvas.Width / 8, canvas.Height / 2 + canvas.Height/12));
+        points.Add(new Point(canvas.Width / 2, 3 * canvas.Height / 4));
+        canvas.Children.Add(lines);
+        DrawBezierCurve();
+    }
 }
