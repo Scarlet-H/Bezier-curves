@@ -10,5 +10,6 @@
         <TextBox Name="countInput" TextAlignment="Center" HorizontalAlignment="Left" Margin="860,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" Height="50" FontSize="20" TextChanged="countInput_TextChanged"/>
         <Canvas x:Name="canvas" Width="800" Height="800" Margin="10,0,190,0" MouseDown="Canvas_MouseDown" Background="Transparent">
         </Canvas>
+        <Button Content="Random" HorizontalAlignment="Left" Margin="860,137,0,0" VerticalAlignment="Top" Width="60" Height="40" FontSize="15" Click="Button_Click"/>
     </Grid>
 </Window>

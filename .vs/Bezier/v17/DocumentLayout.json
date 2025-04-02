@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Bezier\\",
+  "WorkspaceRootPath": "E:\\Bezier-curves\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE74560F-1BA1-4242-841A-465DC832C53E}|Bezier.csproj|e:\\bezier\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE74560F-1BA1-4242-841A-465DC832C53E}|Bezier.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE74560F-1BA1-4242-841A-465DC832C53E}|Bezier.csproj|e:\\bezier-curves\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE74560F-1BA1-4242-841A-465DC832C53E}|Bezier.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE74560F-1BA1-4242-841A-465DC832C53E}|Bezier.csproj|e:\\bezier\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AE74560F-1BA1-4242-841A-465DC832C53E}|Bezier.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{AE74560F-1BA1-4242-841A-465DC832C53E}|Bezier.csproj|e:\\bezier-curves\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE74560F-1BA1-4242-841A-465DC832C53E}|Bezier.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 210,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "E:\\Bezier\\MainWindow.xaml.cs",
+              "DocumentMoniker": "E:\\Bezier-curves\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "E:\\Bezier\\MainWindow.xaml.cs",
+              "ToolTip": "E:\\Bezier-curves\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAwwFEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAuwHYAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T06:46:20.102Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "E:\\Bezier\\MainWindow.xaml",
+              "DocumentMoniker": "E:\\Bezier-curves\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "E:\\Bezier\\MainWindow.xaml",
+              "ToolTip": "E:\\Bezier-curves\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-05T06:46:21.438Z"
+              "WhenOpened": "2025-03-05T06:46:21.438Z",
+              "EditorCaption": ""
             }
           ]
         }

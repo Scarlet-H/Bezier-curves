@@ -56,7 +56,7 @@ public partial class MainWindow : Window
         myLinearGradientBrush.GradientStops.Add(new GradientStop(Colors.LimeGreen, 1.0));
         // ----------------------------------------------------------
         if (points.Count < 3) return;
-        bezierCurve = new Polyline { Stroke = myLinearGradientBrush, StrokeThickness = 4 };
+        bezierCurve = new Polyline { Stroke = myLinearGradientBrush, StrokeThickness = 6 };
         curvePoints = [];
         bezierCurve.Points = curvePoints;
         canvas.Children.Add(bezierCurve);
@@ -113,6 +113,31 @@ public partial class MainWindow : Window
             points.Clear();
             counter = 0;
             animationStep = 0;
+        }
+    }
+
+    private void Button_Click(object sender, RoutedEventArgs e)
+    {
+        if(countInput.Text != "")
+        {
+            canvas.Children.Clear();
+            points.Clear();
+            counter = 0;
+            animationStep = 0;
+
+            for (int i = 0; i < int.Parse(countInput.Text); i++)
+            {
+                Polyline lines = new() { Stroke = Brushes.Black, StrokeThickness = 0.5 };
+                lines.Points = points;
+                Point point = new Point(Random.Shared.NextDouble() * canvas.Width, Random.Shared.NextDouble() * canvas.Height);
+                points.Add(point);
+                Ellipse dot = new() { Width = 5, Height = 5, Fill = Brushes.Black };
+                Canvas.SetLeft(dot, point.X - dot.Width / 2);
+                Canvas.SetTop(dot, point.Y - dot.Height / 2);
+                canvas.Children.Add(dot);
+                canvas.Children.Add(lines);
+            }
+            DrawBezierCurve();
         }
     }
 }
