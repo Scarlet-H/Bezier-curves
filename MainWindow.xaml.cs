@@ -73,20 +73,18 @@ public partial class MainWindow : Window
         }
         return result;
     }
-    private static double Factorial(double n)
-    {
-        double factorial = 1;
-        for (int i = 1; i <= n; i++)
+        private static double BinomialCoefficient(double n, double k)
         {
-            factorial *= i;
+            if (k == 0 || k == n) return 1;
+            double result = 1;
+            k = Math.Min(k, n - k);
+            for (int i = 1; i <= k; i++)
+            {
+                result *= n - (k - i);
+                result /= i;
+            }
+            return result;
         }
-        return factorial;
-    }
-    private static double BinomialCoefficient(double n, double k)
-    {
-        if (k == 0 || k == n) return 1;
-        return Factorial(n) / (Factorial(k) * Factorial(n - k));
-    }
     private void StartAnimation()
     {
         timer = new DispatcherTimer { Interval = TimeSpan.FromMilliseconds(50) };
